@@ -1,12 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
+  compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxt/image',
-    '@nuxt/test-utils',
-    '@nuxt/ui',
-    '@nuxt/scripts'
-  ]
-})
+  modules: ["@nuxt/image", "@nuxt/test-utils", "@nuxt/ui", "@nuxt/scripts"],
+  css: ["~/assets/css/main.css"],
+  app: {
+    pageTransition: {
+      name: "fade",
+      mode: "out-in",
+    },
+    layoutTransition: {
+      name: "slide",
+      mode: "out-in",
+    },
+  },
+});
