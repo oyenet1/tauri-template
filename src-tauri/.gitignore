@@ -2,3 +2,40 @@
 # will have compiled files and executables
 /target/
 /gen/schemas
+
+# Rust/Cargo specific
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Tauri specific
+/gen/
+*.tar.gz
+.tauri/
+
+# Build artifacts
+dist/
+build/
+
+# Platform specific builds
+*.app
+*.dmg
+*.deb
+*.rpm
+*.msi
+*.exe
+
+# Development keys and certificates
+*.p12
+*.pem
+*.key
+*.crt
+*.pfx
+
+# Debug symbols
+*.dSYM/
+
+# Mobile development
+*.apk
+*.aab
+*.ipa

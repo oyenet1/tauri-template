@@ -1,3 +1,38 @@
 xcuserdata/
 build/
 Externals/
+
+# Xcode
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+*.xcscheme
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# Provisioning profiles
+*.mobileprovision
+*.provisionprofile
+
+# Certificates
+*.p12
+*.cer
+*.certSigningRequest

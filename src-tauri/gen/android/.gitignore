@@ -7,6 +7,12 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/.idea/compiler.xml
+/.idea/misc.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
 .DS_Store
 build
 /captures
@@ -14,6 +20,32 @@ build
 .cxx
 local.properties
 key.properties
+keystore.properties
+
+# Signing files
+*.jks
+*.keystore
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
 
 /.tauri
 /tauri.settings.gradle
