@@ -106,3 +106,59 @@ bun.lockb
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Tauri specific
+src-tauri/target/
+src-tauri/gen/android/*/target/
+src-tauri/gen/android/*/build/
+src-tauri/gen/android/*/.gradle/
+src-tauri/gen/android/*/local.properties
+src-tauri/gen/android/*/.cxx/
+src-tauri/gen/android/*/app/release/
+src-tauri/gen/android/*/app/debug/
+src-tauri/gen/ios/*/build/
+src-tauri/gen/ios/*/DerivedData/
+src-tauri/gen/ios/*/*.xcworkspace/xcuserdata/
+src-tauri/gen/ios/*/*.xcodeproj/xcuserdata/
+src-tauri/gen/ios/*/*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Platform specific builds
+*.apk
+*.aab
+*.ipa
+*.app
+*.dmg
+*.deb
+*.rpm
+*.exe
+*.msi
+
+# Development certificates and keys
+*.p12
+*.pem
+*.key
+*.crt
+*.mobileprovision
+keystore.properties
+
+# Android specific
+.gradle/
+local.properties
+*.jks
+*.keystore
+
+# iOS specific
+*.cer
+*.p12
+*.mobileprovision
+Pods/
+Podfile.lock
+
+# Rust specific
+Cargo.lock
+**/target/
+**/*.rs.bk
+
+# WiX Installer files (Windows)
+*.wixobj
+*.wixpdb
