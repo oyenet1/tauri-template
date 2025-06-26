@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p class="text-blue-600 text-xl">Homepage dear</p>
-    <ColorModeToggle />
+    <p class="text-red-600 text-xl">Homepage dear</p>
   </div>
 </template>
 
