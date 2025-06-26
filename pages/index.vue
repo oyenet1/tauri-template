@@ -78,7 +78,7 @@
           >
             Welcome to
             <span
-              class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              class="bg-gradient-to-r from-blue-600 to-primary-900 bg-clip-text text-transparent"
             >
               TauriApp
             </span>
