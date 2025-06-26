@@ -1,8 +1,0 @@
-{
-  "build": {
-    "beforeDevCommand": "bun dev",
-    "beforeBuildCommand": "bun generate",
-    "devUrl": "http://localhost:3000",
-    "frontendDist": "../dist"
-  }
-}
