@@ -5,6 +5,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "tauri:desktop": "bun tauri dev",
+    "tauri:android": "bun tauri android dev",
+    "tauri:ios": "bun tauri ios dev",
+    "tauri": "tauri",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -15,11 +19,13 @@
     "@nuxt/test-utils": "3.19.1",
     "@nuxt/ui": "3.2.0",
     "@nuxtjs/device": "^3.2.4",
-    "@unhead/vue": "^2.0.3",
+    "@unhead/vue": "^2.0.11",
     "nuxt": "^3.17.5",
-    "typescript": "^5.6.3",
+    "typescript": "^5.8.3",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "@tauri-apps/api": "^2.6.0",
+    "@tauri-apps/plugin-opener": "^2.4.0"
   },
   "trustedDependencies": [
     "@parcel/watcher",

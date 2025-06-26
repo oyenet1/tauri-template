@@ -15,8 +15,44 @@ export default defineNuxtConfig({
     server: {
       // Tauri requires a consistent port
       strictPort: true,
+      // Watch options to prevent EMFILE errors
+      watch: {
+        ignored: [
+          "**/src-tauri/target/**",
+          "**/src-tauri/gen/**",
+          "**/node_modules/**",
+          "**/.git/**",
+        ],
+      },
     },
   },
+
+  // Nitro configuration to exclude Tauri directories
+  nitro: {
+    storage: {
+      // Prevent watching large directories
+    },
+  },
+
+  // Watch options to prevent EMFILE errors
+  watch: [
+    "~/components/**/*",
+    "~/composables/**/*",
+    "~/layouts/**/*",
+    "~/pages/**/*",
+    "~/assets/**/*",
+    "~/utils/**/*",
+  ],
+
+  // Ignore patterns for file watching
+  ignore: [
+    "**/src-tauri/target/**",
+    "**/src-tauri/gen/**",
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/dist/**",
+    "**/build/**",
+  ],
 
   modules: [
     "@nuxt/image",
