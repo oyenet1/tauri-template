@@ -26,6 +26,7 @@
     "@tailwindcss/oxide"
   ],
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.52"
+    "@iconify-json/lucide": "^1.2.52",
+    "@tauri-apps/cli": "^2.6.0"
   }
 }
